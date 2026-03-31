@@ -42,9 +42,10 @@ export default function App() {
 				);
 			default:
 				return (
-					<div className="w-full h-full bg-background text-foreground">
-						<h1>Openscreen</h1>
-					</div>
+					<ShortcutsProvider>
+						<VideoEditor />
+						<ShortcutsConfigDialog />
+					</ShortcutsProvider>
 				);
 		}
 	})();
